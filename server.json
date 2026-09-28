@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.atako/mcp",
+  "title": "Atako",
+  "description": "Remote MCP server to run your Atako AI agents: chat, projects, files, integrations and channels.",
+  "version": "0.2.0",
+  "repository": {
+    "url": "https://github.com/aiybiz/aiybiz-next",
+    "source": "github",
+    "subfolder": "apps/api"
+  },
+  "websiteUrl": "https://atako.ai/en/developers",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.atako.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token: an Atako API key (aik_...) from Settings → API keys. Grants 86 read/write tools grouped in toolsets (?toolsets=), limited by the key's read or write scope.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api.atako.ai/mcp/public",
+      "headers": []
+    }
+  ]
+}
