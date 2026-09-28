@@ -3,11 +3,10 @@
   "name": "ai.atako/mcp",
   "title": "Atako",
   "description": "Remote MCP server to run your Atako AI agents: chat, projects, files, integrations and channels.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "repository": {
-    "url": "https://github.com/aiybiz/aiybiz-next",
-    "source": "github",
-    "subfolder": "apps/api"
+    "url": "https://github.com/aiybiz/atako-mcp",
+    "source": "github"
   },
   "websiteUrl": "https://atako.ai/en/developers",
   "remotes": [
